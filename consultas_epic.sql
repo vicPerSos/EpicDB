@@ -8,7 +8,12 @@ FROM
 WHERE
     nombre = 'Estudio7';
 -- Muestra toda la informacion del tercer estudio;
-select * from estudio where id=2;
+SELECT 
+    *
+FROM
+    estudio
+WHERE
+    id = 3;
 -- muestra el/los estudio/s que pertenezcan a PaisH
 SELECT 
     *
@@ -24,7 +29,7 @@ SELECT
 FROM
     usuario
 WHERE
-    id = 7;
+    id = 8;
 
 -- Muestra los 3 ultimos usario registrados
 SELECT 
@@ -63,4 +68,53 @@ select * from juego where genero='carreras';
 
 
 -- Tabla biblioteca
-select * from biblioteca;
+
+-- Dame el id de los jugadores del juego numero 3
+SELECT 
+    usuario
+FROM
+    biblioteca
+WHERE
+    juego = 2;
+-- muestra los datos de las bliblioecas cuyo id sea divisor de 33
+SELECT 
+    *
+FROM
+    biblioteca
+WHERE
+    33 % id = 0;
+-- muestra los juegos del usuario 4
+SELECT 
+    juego
+FROM
+    biblioteca
+WHERE
+    usuario = 4; 
+    
+-- Tabla valoracion
+
+-- muestra las valoraciones de cuatro estrellas
+SELECT 
+    *
+FROM
+    valoracion
+WHERE
+    estrella = 4;
+select * from valoracion;
+-- muestra la ultima valoracion
+SELECT 
+    *
+FROM
+    valoracion
+ORDER BY fech DESC
+LIMIT 1;
+-- muestras las valoraciones del usuario 5
+SELECT 
+    *
+FROM
+    valoracion
+WHERE
+    usuario = 5;
+
+
+    
