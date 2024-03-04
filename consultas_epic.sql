@@ -41,4 +41,26 @@ FROM
     usuario
 WHERE
     id % 2 != 0;
+    
+-- Tabla juego 
 
+-- Muestra los jegos que cuesten menos de 30€
+SELECT 
+    *
+FROM
+    juego
+WHERE
+    precio < 30;
+-- Muestra el id de los estudios de los juegos multiplos de 3
+SELECT 
+    estudio
+FROM
+    juego
+WHERE
+    id % 3 = 0;
+-- Muestra los juegos de carrera
+select * from juego where genero='carreras';
+
+
+-- Tabla biblioteca
+select * from biblioteca;

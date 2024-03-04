@@ -111,7 +111,20 @@ INSERT INTO Biblioteca (usuario, juego) VALUES
 (7, 9),
 (8, 6),
 (9, 8),
-(10, 10);
+(10, 10),
+(1, 4), 
+(1, 6), 
+(2, 1), 
+(2, 5), 
+(3, 2), 
+(3, 4), 
+(4, 1), 
+(4, 3),
+(5, 2),
+(5, 6); 
+
+;
+
 select * from biblioteca;
 
 -- Inserción de datos ficticios para la tabla Valoracion
