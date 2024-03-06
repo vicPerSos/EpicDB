@@ -140,29 +140,25 @@ INSERT INTO Valoracion (usuario, juego, estrella, mensaje, fech) VALUES
 (8, 6, 5, 'Increíble experiencia de juego', '2023-08-15'),
 (9, 8, 3, 'Divertido pero un poco complicado', '2023-10-18'),
 (10, 10, 4, 'Gran historia y jugabilidad', '2023-11-10')  ,
-
-
-/*
-(1, 12, 3, 'Buen juego, pero necesita mejoras', '2023-06-05'),
-(2, 14, 5, 'Simplemente asombroso', '2023-08-12'),
-(3, 11, 2, 'No recomendaría este juego', '2023-04-03'),
-(4, 13, 4, 'Adictivo y emocionante', '2023-02-28'),
-(5, 15, 3, 'Esperaba más de este juego', '2023-07-17'),
-(6, 17, 5, '¡El mejor juego que he jugado!', '2023-09-25'),
-(7, 19, 2, 'No estoy impresionado', '2023-11-08'),
-(8, 16, 4, 'Muy entretenido', '2023-10-01'),
-(9, 18, 3, 'Podría ser mejor', '2023-12-14'),
-(10, 20, 5, 'Una obra maestra', '2023-01-20'),
-(1, 22, 4, 'Recomendaría este juego a todos', '2023-03-02'),
-(2, 24, 2, 'Desafío decepcionante', '2023-05-09'),
-(3, 21, 5, 'No puedo dejar de jugarlo', '2023-06-21'),
-(4, 23, 3, 'Mejor de lo que esperaba', '2023-08-04'),
-(5, 25, 4, 'Historia intrigante', '2023-09-12'),
-(6, 27, 2, 'No es para mí', '2023-10-30'),
-(7, 29, 5, '¡Impresionante experiencia de juego!', '2023-11-15'),
-(8, 26, 3, 'Divertido pero difícil', '2023-12-22'),
-(9, 28, 4, 'Muy recomendado', '2023-02-10'),*/
-(10, 10, 2, 'No puedo entender la trama', '2023-04-01');
+(1, 8, 2.4, 'Buen juego, pero necesita mejoras', '2023-06-05'),
+(2, 2, 4.7, 'Simplemente asombroso', '2023-08-12'),
+(3, 7, 1.2, 'No recomendaría este juego', '2023-04-03'),
+(4, 1, 3.6, 'Adictivo y emocionante', '2023-02-28'),
+(5, 6, 2.3, 'Esperaba más de este juego', '2023-07-17'),
+(6, 9, 4.5, '¡El mejor juego que he jugado!', '2023-09-25'),
+(7, 10, 1.8, 'No estoy impresionado', '2023-11-08'),
+(8, 5, 3.4, 'Muy entretenido', '2023-10-01'),
+(9, 3, 2.1, 'Podría ser mejor', '2023-12-14'),
+(10, 4, 4.2, 'Una obra maestra', '2023-01-20'),
+(1, 6, 3.8, 'Recomendaría este juego a todos', '2023-03-02'),
+(2, 8, 2.5, 'Desafío decepcionante', '2023-05-09'),
+(3, 9, 4.9, 'No puedo dejar de jugarlo', '2023-06-21'),
+(4, 5, 3.1, 'Mejor de lo que esperaba', '2023-08-04'),
+(5, 7, 4.4, 'Historia intrigante', '2023-09-12'),
+(6, 1, 2.7, 'No es para mí', '2023-10-30'),
+(7, 10, 4.2, '¡Impresionante experiencia de juego!', '2023-11-15'),
+(8, 3, 3.3, 'Divertido pero difícil', '2023-12-22'),
+(9, 2, 4.1, 'Muy recomendado', '2023-02-10');
 
 select * from valoracion;
 
