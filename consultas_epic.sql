@@ -64,7 +64,7 @@ FROM
 WHERE
     id % 3 = 0;
 -- Muestra los juegos de carrera
-select * from juego where genero='carreras';
+SELECT * from juego where genero='carreras';
 
 
 -- Tabla biblioteca
@@ -100,7 +100,7 @@ FROM
     valoracion
 WHERE
     estrella = 4;
-select * from valoracion;
+SELECT * from valoracion;
 -- muestra la ultima valoracion
 SELECT 
     *
@@ -116,5 +116,34 @@ FROM
 WHERE
     usuario = 5;
 
+-- Vistas de consultas complejas
 
+-- Vista que elija el juego gratis de la semana para cada usuario siendo siempre de menos de 30€
+CREATE OR REPLACE VIEW regala AS
+    SELECT 
+        u.nombre, j.titulo
+    FROM
+        usuario u,
+        juego j
+    WHERE
+        j.precio < 30
+    ORDER BY RAND();
     
+    
+SELECT * FROM regala;
+
+-- Muestra los nombres de usuario y su valoracion y estreyas del juego7
+SELECT 
+    u.nombre, v.estrella, v.mensaje
+FROM
+    juego j
+        JOIN
+    valoracion v ON v.juego = j.id
+        JOIN
+    usuario u ON u.id = v.usuario
+WHERE
+    j.id = 7;
+
+-- Vista que te muestre los juegos agrupados por estrellas 
+SELECT j.titulo FROM juego j JOIN valoracion v ON j.id=v.juego
+ORDER BY v.estrella ;    
